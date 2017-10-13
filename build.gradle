@@ -1,0 +1,38 @@
+group 'mars'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // logBack
+    testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+
+    // Spring
+    compile group: 'org.springframework', name: 'spring-web', version: '4.3.11.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.11.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-web', version: '4.2.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-config', version: '4.2.3.RELEASE'
+    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '1.11.7.RELEASE'
+    //Hibernate
+    testCompile group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.0.2.Final'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.10.Final'
+    //DataBase
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.7-dmr'
+    compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.1.1'
+    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+
+
+
+
+
+
+}
